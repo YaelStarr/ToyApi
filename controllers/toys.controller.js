@@ -1,6 +1,6 @@
 // const { Toy } = require("../models/Toy.model");
 
-const { Toy } = require("../models/toy.model");
+const { Toy } = require("../models/Toy.model");
 
 /**
  * 
