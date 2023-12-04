@@ -58,7 +58,7 @@
             <h1 class="display-4 text-center text-danger py-4">TOYS API</h1>
             <h4 class="mb-3 display-4 text-center bigDomain">
                 <span class="text-secondary fw-bolder">DOMAIN</span>
-                <span class="text-secondary text fw-bold" id="Domain">https://api-toys.cyclic.app</span>
+                <span class="text-secondary text fw-bold" id="Domain">https://toyapi.onrender.com</span>
                 <button class="btn mx-2 copyBtn" id="domainbtn"><i class="bi bi-files"></i></button>
             </h4>
         </div>
@@ -99,10 +99,7 @@
                                      "email":"123456@gmail.com"
                                  } </pre>
                         </td>
-                        <td>User login, if the email and password are correct the server will respond with a token,<br>
-                            <a class="text-decoration-none"
-                                href="https://github.com/MaorgD/ToysProject/blob/main/api/validation/userValidation.js">if
-                                you want to see the template of valid user.</a>
+                        <td>User login.
                         </td>
                     </tr>
 
@@ -143,13 +140,13 @@
                 <tbody>
                     <tr>
                         <td>GET</td>
-                        <td><a href="/api/v1/toys">/toys</a></td>
+                        <td><a href="https://toyapi.onrender.com/api/v1/toys">/toys</a></td>
                         <td class="text-center">none</td>
                         <td>Get a list of all the toys, will present 10 results per page.</td>
                     </tr>
                     <tr>
                         <td>GET</td>
-                        <td><a href="https://api-toys.cyclic.app/toys/search?s=doll">/toys/search?s=doll</a></td>
+                        <td><a href="http://localhost:1200/api/v1/toys/search?s=doll">/toys/search?s=doll</a></td>
                         <td class="text-center">none</td>
                         <td>search for a toy by searching follwing name or info after the "s=", it will present 10
                             results per page.
@@ -158,14 +155,14 @@
                     <tr>
                         <td>GET</td>
                         <td><a
-                                href="https://api-toys.cyclic.app/toys/prices?min=50&max=200">/toys/prices?min=50&max=200</a>
+                                href="http://localhost:1200/api/v1/toys/single/656da5e06c934dd71df17e39">/toys/single/:id</a>
                         </td>
                         <td class="text-center">none</td>
                         <td>Get a list of the toys by min & max , it will present 10 results per page.</td>
                     </tr>
                     <tr>
                         <td>GET</td>
-                        <td><a href="https://api-toys.cyclic.app/toys/category/doll">/toys/category/:catName</a></td>
+                        <td><a href="http://localhost:1200/api/v1/toys/category/dolls">/toys/category/:catName</a></td>
                         <td class="text-center">none</td>
                         <td>Get a list of all the toys in toys <strong>category</strong>, it will present 10 results per
                             page.</td>
@@ -189,7 +186,7 @@
                     </tr>
                     <tr>
                         <td>PUT</td>
-                        <td>/toys/ID </td>
+                        <td>/toys/"editId" </td>
                         <td>
                             <pre>
                                 {
@@ -201,7 +198,7 @@
                     </tr>
                     <tr>
                         <td>DELETE</td>
-                        <td>/toys/ID</td>
+                        <td>/toys/:delId</td>
                         <td class="text-center">none</td>
                         <td>Delete a toy from the data base, <strong>You need a token for this query.</strong></td>
                     </tr>
